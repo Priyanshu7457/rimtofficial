@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/slider.css" />
+  <link rel="stylesheet" href="../CSS/dropdown.css" />
+  <link rel="stylesheet" href="../CSS/home.css" />
+  <link rel="website icon" type="png" href="../Image/web-icon.png" />
+  <link rel="stylesheet" href="../CSS/fees.css">
+  <title>Fees Structure</title>
+</head>
+
+<body>
+  <div class="heading">
+    <a href="../home.html" class="logo"><img src="../Image/web-icon.png" /></a>
+    <h1 class="title">
+      Student Profile <br />
+      Rotary Institue Of Management And Technology<br />
+      Chandausi<br />
+    </h1>
+  </div>
+  <div class="space">
+
+  </div>
+  <div class="space"></div>
+  <header>
+    <nav class="nav">
+      <div class="nav__link hide">
+        <a href="../home.html">Home</a>
+        <div class="dropdown dropbtn">
+          <a onclick="toggleDropdown()"> About </a>
+          <div id="myDropdown" class="dropdown-content dropbtn">
+            <a href="./p-about.html">Principal</a>
+            <a href="./library.html">Library</a>
+            <a href="#">Fees Structure</a>
+          </div>
+        </div>
+        <a href="./contact.html">Contact</a>
+        <a href="./studentProfile.html">Student Profile</a>
+        <a href="./bcastaff.html">B.C.A Staff</a>
+        <a href="./admin.html">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- slider  -->
+  <div class="slider">
+    <span>
+      <button class="prev-btn" onclick="prevSlide()">&#10094;</button></span>
+
+    <img src="../Image/Login Background.jpeg" alt="Image 3" class="slide" />
+    <img src="../Image/FUNCITY-1.jpeg" alt="Image 1" class="slide" />
+    <img src="../Image/FUNCITY-2.jpg" alt="Image 2" class="slide" />
+    <span>
+      <button class="next-btn" onclick="nextSlide()">&#10095;</button></span>
+  </div>
+  <div class="about">
+    <div class="principal">
+      <img src="../Image/fees.jfif" />
+    </div>
+  </div>
+
+  <div class="container1 light-bg">
+    <div class="contact-details">
+      <h2 class="light-text">Fee Details-(Only B.C.A)</h2>
+      <table>
+        <tr>
+          <th>Registration Fees</th>
+          <td>Rs-5000</td>
+        </tr>
+        <tr>
+          <th>Fees per Semester</th>
+          <td>Rs-12,500</td>
+        </tr>
+        <tr>
+          <th>Discount For Boys</th>
+          <td>15 % off</td>
+        </tr>
+        <tr>
+          <th>Discount For Girls</th>
+          <td>25 % Off</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="../JS/slider.js"></script>
+  <script src="../JS/dropdown.js"></script>
+  <script src="../JS/security.js"></script>
+</body>
+
+</html>

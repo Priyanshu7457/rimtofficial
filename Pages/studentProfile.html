@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="../CSS/studentProfile.css">
+  <link rel="website icon" type="png" href="../Image/web-icon.png" />
+  <title>RIMT-StudentProfile</title>
+</head>
+
+<body>
+  <div id="load-box" class="hide"></div>
+  <div id="login-box">
+    <center>
+      <h1>Student Login Form</h1>
+    </center>
+    <form onsubmit="readData(); return false">
+      <div class="container1">
+        <label>User-Id : </label>
+        <input type="text" id="fetch" name="username" placeholder="Enter Your User-Id" />
+        <input type="submit" id="button" value="Login" />
+        <div class="register">
+          <a href="registration.html">Registration</a>
+        </div>
+        <input type="checkbox" /> Remember me Forgot
+        <a href="#">UserId</a>
+      </div>
+    </form>
+  </div>
+
+  <div id="student"></div>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+  <script src="../JS/studentProfile.js"></script>
+</body>
+
+</html>

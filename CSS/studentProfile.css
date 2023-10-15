@@ -1,0 +1,233 @@
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1800px;
+  height: 100%;
+  background: url("../Image/Login Background.jpeg") no-repeat center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#load-box {
+  margin-top: 20px;
+}
+
+.container1 label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.container1 input[type="text"],
+.container1 input[type="password"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+
+.container1 input[type="submit"] {
+  background-color: #4caf50;
+  width: 100%;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.container1 .register a {
+  background-color: #4caf50;
+  width: 90%;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.register a {
+  color: white;
+}
+
+.container1 input[type="submit"] :hover {
+  opacity: 0.7;
+}
+
+.container1 a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 300px) {
+  .container1 {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .container1 input[type="text"],
+  .container1 input[type="password"] {
+    padding: 8px 10px;
+  }
+
+  .container1 input[type="submit"] {
+    background-color: #4caf50;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+
+  .register a {
+    width: 90%;
+  }
+
+  #login-box {
+    margin-top: 0px;
+  }
+
+  #login-box h1 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container1 {
+    width: 100%;
+    width: 200px;
+  }
+
+  .container1 input[type="text"],
+  .container1 input[type="password"] {
+    padding: 8px 10px;
+  }
+
+  .register a {
+    width: 90%;
+  }
+
+  .container1 input[type="submit"] {
+    background-color: #4caf50;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+
+  #login-box {
+    margin-top: 0px;
+  }
+
+  #login-box h1 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: white;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#message-box {
+  color: red;
+  font-weight: bold;
+}
+
+.update-student {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.password-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.password-container input[type="password"] {
+  padding-right: 30px;
+  width: 100%;
+}
+
+.password-container i {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  float: right;
+  cursor: pointer;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/slider.css" />
+  <link rel="stylesheet" href="../CSS/dropdown.css" />
+  <link rel="stylesheet" href="../CSS/home.css" />
+  <link rel="website icon" type="png" href="../Image/web-icon.png" />
+  <title>Principal Message</title>
+  <style>
+    .principal {
+      max-width: 800px;
+      width: 100%;
+      border: 2px solid black;
+      font-size: 22px;
+      text-align: justify;
+      padding: 15px;
+      display: grid;
+      place-items: center;
+    }
+
+    .principal img {
+      height: 200px;
+      width: 150px;
+    }
+
+    .about {
+      display: grid;
+      place-items: center;
+    }
+
+    .principal h2 {
+      color: blue;
+    }
+
+    @media (max-width: 768px) {
+      .principal {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .principal {
+        padding: 5px;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .principal {
+        font-size: 14px;
+      }
+
+      .principal h2 {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heading">
+    <a href="../home.html" class="logo"><img src="../Image/web-icon.png" /></a>
+    <h1 class="title">
+      Student Profile <br />
+      Rotary Institue Of Management And Technology<br />
+      Chandausi<br />
+    </h1>
+  </div>
+  <div class="space">
+
+  </div>
+  <header>
+    <nav class="nav">
+      <div class="nav__link hide">
+        <a href="../home.html">Home</a>
+        <div class="dropdown dropbtn">
+          <a onclick="toggleDropdown()"> About </a>
+          <div id="myDropdown" class="dropdown-content dropbtn">
+            <a href="#">Principal</a>
+            <a href="./library.html">Library</a>
+            <a href="./fees.html">Fees Structure</a>
+          </div>
+        </div>
+        <a href="./contact.html">Contact</a>
+        <a href="./studentProfile.html">Student Profile</a>
+        <a href="./bcastaff.html">B.C.A Staff</a>
+        <a href="./admin.html">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- slider  -->
+  <div class="slider">
+    <span>
+      <button class="prev-btn" onclick="prevSlide()">&#10094;</button></span>
+
+    <img src="../Image/Login Background.jpeg" alt="Image 3" class="slide" />
+    <img src="../Image/FUNCITY-1.jpeg" alt="Image 1" class="slide" />
+    <img src="../Image/FUNCITY-2.jpeg" alt="Image 2" class="slide" />
+    <span>
+      <button class="next-btn" onclick="nextSlide()">&#10095;</button></span>
+  </div>
+
+  <div class="about">
+    <div class="principal">
+      <h2>Message from the desk of Principal……</h2>
+      <br />
+      <img src="../Image/principal.jpg" />
+      <br />
+      <p>
+        It is my privilege and pleasure to welcome you, the budding managers
+        to RIMT, a centre of innovation and excellence where we nurture young
+        talents. Our major emphasis of imparting education is to encourage
+        curiosity and innovativeness amongst our students and lay a foundation
+        from where they can acquire quick learning ability and adaptability.
+        The student-centric approach brings about a three-sixty degree
+        development of students that empowers them to face the challenges in
+        this highly competitive and ever changing world. We call this making
+        them Next ready. Indeed, our Institution’s very motto is striving for
+        next. Our endeavor is to combine the excellence of academics with real
+        life projects and skill labs so that students not only get an
+        outstanding learning experience, but can apply their knowledge to
+        solving the new emerging problems and crafting innovative strategies
+        to meet the dynamics of the industry as well as the market. The
+        faculty at RIMT routinely goes the extra mile to meet the needs of our
+        students. A challenging academic program, and individual attention for
+        our students combined with many extra-curricular opportunities are all
+        part of RIMT experience.
+        <br />
+        <br />
+        Best wishes.
+        <br />
+        <br />
+        <b> Dr. Upendra Kumar</b>
+        <br />
+        (Principal)
+      </p>
+    </div>
+  </div>
+  <script src="../JS/slider.js"></script>
+  <script src="../JS/dropdown.js"></script>
+  <script src="../JS/security.js"></script>
+</body>
+
+</html>

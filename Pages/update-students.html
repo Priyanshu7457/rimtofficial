@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="website icon" type="png" href="../Image/ web-icon.png" />
+    <link rel="stylesheet" href="../CSS/updateStudent.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <title>RIMT-Update Data</title>
+</head>
+
+<body>
+
+    <div id="login-box">
+        <center>
+            <h1>Student Update Data Login Form</h1>
+        </center>
+        <form onsubmit="readData(); return false">
+            <div class="container1">
+                <div id="message-box"></div>
+                <label>User-Id : </label>
+                <input type="text" id="fetch" name="username" placeholder="Enter Your User-Id" />
+
+                <input type="submit" id="button" value="Login" />
+                <input type="checkbox" /> Remember me Forgot
+                <a href="#">UserId</a>
+            </div>
+        </form>
+    </div>
+    <div id="load-box" class="hide"></div>
+    <div id="login-box2">
+        <div class="container hide" id="container-box">
+            <form class="form" id="form" onsubmit="updateData(); return false;">
+                <h2>Update Student Data</h2>
+                <div class="form-control">
+                    <label for="rollnumber">Roll-Number</label>
+                    <input type="text" id="rollnumber" placeholder="Enter Roll Number" value="">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="studentname">Student Name</label>
+                    <input type="text" id="studentname" placeholder="Enter Student Name" value="">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="fathername">Father Name</label>
+                    <input type="text" id="fathername" placeholder=" Enter Father Name" value="">
+                    <small>Error Message</small>
+                </div>
+                <div class=" form-control">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder=" Enter Address" value="">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="city">City/Town</label>
+                    <input type="text" id="city/Town" placeholder=" Enter City" value="">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="pincode">Pin Code</label>
+                    <input type="text" id="pincode" placeholder=" Enter Pincode" value="">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter Email" value="">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control password-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" value="">
+                    <i class=" far fa-eye" id="togglePassword"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control password-container">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="Enter Password Again" value="">
+                    <i class=" far fa-eye" id="togglePassword2"></i>
+                    <small>Error Message</small>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div id="final-box"></div>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="../JS/updateStudentData.js"></script>
+    <script src="../JS/security.js"></script>
+</body>
+
+</html>

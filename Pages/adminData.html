@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="jpg" href="../Image/web-icon.png" />
+    <link rel="stylesheet" href="../CSS/admindata.css">
+    <title>RIMT-AdminData</title>
+</head>
+
+<body>
+    <div id="load">
+        <div id="load-box"></div>
+    </div>
+    <div id="login-box" class="hide">
+        <h1>Student List</h1>
+        <a href="../Pages/registration.html" class="add-student">Add Student</a>
+        <a href="../Pages/admin.html" class="admin">Log Out</a>
+        <br />
+        <br />
+
+        <table border="1" width="100%" id="tr">
+            <tr>
+                <th>UserId</th>
+                <th>Roll-Number</th>
+                <th>Name</th>
+                <th>Father-Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Pincode</th>
+                <th>Action</th>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="../JS/adminData.js"></script>
+    <script src="../JS/security.js"></script>
+</body>
+
+</html>

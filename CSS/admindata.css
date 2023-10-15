@@ -1,0 +1,78 @@
+.add-student,
+.update-student,
+.delete-student,
+.admin {
+  text-decoration: none;
+  border: 1.5px solid black;
+}
+
+.add-student {
+  background-color: blue;
+  color: white;
+}
+
+.update-student {
+  background-color: green;
+  color: white;
+}
+
+.delete-student {
+  background-color: red;
+  color: white;
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  background-color: white;
+}
+
+.admin {
+  background-color: crimson;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+#load {
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

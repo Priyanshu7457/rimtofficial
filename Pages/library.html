@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/slider.css" />
+  <link rel="stylesheet" href="../CSS/dropdown.css" />
+  <link rel="stylesheet" href="../CSS/home.css" />
+  <link rel="website icon" type="png" href="../Image/web-icon.png" />
+  <title>Library</title>
+  <style>
+    .about {
+      display: grid;
+      place-items: center;
+    }
+
+    .library h2 {
+      color: blue;
+      text-align: center;
+    }
+
+    .library p {
+      text-align: justify;
+      font-size: 20px;
+    }
+
+    .library {
+      max-width: 800px;
+      width: 100%;
+      border: 2px solid black;
+      font-size: 22px;
+      text-align: justify;
+      padding: 15px;
+      display: grid;
+      place-items: center;
+    }
+
+    .library img {
+      height: 200px;
+      width: 150px;
+    }
+
+    @media (max-width: 768px) {
+      .library {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .library {
+        padding: 5px;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .library {
+        font-size: 14px;
+      }
+
+      .library h2 {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="heading">
+    <a href="../home.html" class="logo"><img src="../Image/web-icon.png" /></a>
+    <h1 class="title">
+      Student Profile <br />
+      Rotary Institue Of Management And Technology<br />
+      Chandausi<br />
+    </h1>
+  </div>
+  <div class="space">
+
+  </div>
+  <header>
+    <nav class="nav">
+      <div class="nav__link hide">
+        <a href="../home.html">Home</a>
+        <div class="dropdown dropbtn">
+          <a onclick="toggleDropdown()"> About </a>
+          <div id="myDropdown" class="dropdown-content dropbtn">
+            <a href="./p-about.html">Principal</a>
+            <a href="#">Library</a>
+            <a href="./fees.html">Fees Structure</a>
+          </div>
+        </div>
+        <a href="./contact.html">Contact</a>
+        <a href="./studentProfile.html">Student Profile</a>
+        <a href="./bcastaff.html">B.C.A Staff</a>
+        <a href="./admin.html">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- slider  -->
+  <div class="slider">
+    <span>
+      <button class="prev-btn" onclick="prevSlide()">&#10094;</button></span>
+
+    <img src="../Image/Login Background.jpeg" alt="Image 3" class="slide" />
+    <img src="../Image/FUNCITY-1.jpeg" alt="Image 1" class="slide" />
+    <img src="../Image/FUNCITY-2.jpg" alt="Image 2" class="slide" />
+    <span>
+      <button class="next-btn" onclick="nextSlide()">&#10095;</button></span>
+  </div>
+  <div class="about">
+    <div class="library">
+      <h2>Library Rules</h2>
+      <br />
+      <img src="../Image/library.jpg" alt="" /><br />
+      <p>
+        The Library will remain open on all working days during college hours.
+        The students are requested to maintain pin drop silence in the library
+        premises. Only one book will be issued to a student for seven days,
+        otherwise the student shall have to <b>pay fine @10/- per day.</b> It
+        is the responsibility of the student to return the book due date i.e.
+        just after three days. If the due date is a holiday, he must return
+        the book on the next working day. The student shall be held
+        responsible for up keeping of the books. They are not allowed to tear
+        out pages or write remarks in the margin of the books. The students
+        are advised to check the book at the time of its issue and the Library
+        In- charge would also check the book at the time of its taking back.
+        If it is observed that any student has violated this rule, he shall be
+        punished with fine. The amount of fine shall not exceed the cost of
+        the book. Eating or playing indoor games in the library is strictly
+        prohibited. Strict disciplinary action will be taken against the
+        students violating the rule. In case of damage/theft or loss of the
+        book during the possession of the book with the student, the cost of
+        the latest edition of the same book or otherwise shall have to be paid
+        by the student.
+        <br />
+        <br />
+        <b>Mrs.Alka Saxena</b>
+        <br />
+        (Library Incharge)
+      </p>
+    </div>
+  </div>
+  <script src="../JS/slider.js"></script>
+  <script src="../JS/dropdown.js"></script>
+  <script src="../JS/security.js"></script>
+</body>
+
+</html>

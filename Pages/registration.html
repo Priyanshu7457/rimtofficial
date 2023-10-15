@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <link rel="website icon" type="png" href="../Image/web-icon.png" />
+    <title>Registration</title>
+</head>
+
+<body>
+    <div id="load-box" class="hide"></div>
+    <div id="login-box">
+        <div class="container">
+            <form class="form" id="form">
+                <h2>Regiter With Us</h2>
+                <div class="form-control">
+                    <label for="rollnumber">Roll-Number</label>
+                    <input type="text" id="rollnumber" placeholder="Enter Roll Number" inputmode="numeric">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="studentname">Student Name</label>
+                    <input type="text" id="studentname" placeholder="Enter Student Name">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="fathername">Father Name</label>
+                    <input type="text" id="fathername" placeholder=" Enter Father Name">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder=" Enter Address">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="city">City/Town</label>
+                    <input type="text" id="city/Town" placeholder=" Enter City ">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="pincode">Pin Code</label>
+                    <input type="text" id="pincode" placeholder=" Enter Pincode" inputmode="numeric">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter Email">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control  password-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <i class="far fa-eye" id="togglePassword"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control password-container">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="Enter Password Again">
+                    <i class="far fa-eye" id="togglePassword2"></i>
+                    <small>Error Message</small>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="final-box"></div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+<script src="../JS/registrationForm.js"></script>
+
+</html>

@@ -1,0 +1,53 @@
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  height: 300px;
+  width: 400px;
+}
+tr,
+td {
+  padding: 5px;
+  border: 1px solid black;
+  width: 200px;
+  height: 300px;
+}
+
+.container {
+  margin-top: 50px;
+  display: grid;
+  place-items: center;
+}
+.t-img {
+  height: 150px;
+  width: 150px;
+  display: grid;
+  place-items: center;
+}
+.t-img img {
+  height: 150px;
+  width: 150px;
+  display: grid;
+  place-items: center;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  table {
+    height: 300px;
+    width: 300px;
+  }
+
+  .image {
+    display: grid;
+    place-items: center;
+  }
+
+  .t-img img {
+    height: 100px;
+    width: 100px;
+  }
+}
