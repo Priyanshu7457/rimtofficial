@@ -19,6 +19,12 @@ body {
   margin: 0;
 }
 
+.uid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   background-color: white;
   border-radius: 5px;
