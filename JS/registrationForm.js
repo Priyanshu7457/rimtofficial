@@ -170,11 +170,11 @@ const saveData = async () => {
       .then((ref) => {
         alert(`Registered Succesfully`);
         found = true;
-        FinalBox.innerHTML = `UserId:<input disabled id="refInput" value="${ref.id}"/> <button id= "${ref.id}" onclick="CopyData(this.id)"> Copy </button> 
-        <br/> Must Copy This Id To Login <br/> Registered Succesfully 
+        FinalBox.innerHTML = `
+        <div class='uid'>UserId:<input disabled id="refInput" value="${ref.id} "/> <button onclick="CopyData()"> Copy </button> 
+        </div><br/> Must Copy This Id To Login <br/> Registered Succesfully 
         <br/>
             <a href="studentProfile.html">Login Here</a>`;
-
       })
       .catch((err) => {
         alert(`Unable to Fetch Data ${err} `);
@@ -183,15 +183,17 @@ const saveData = async () => {
     if (found) {
       Load.classList.add("hide");
     } else if (!found) {
-      alert('Registration Failed');
+      alert("Registration Failed");
       FinalBox.innerHTML = `Server Error\nData Cannot Saved`;
     }
   }, 6000);
 };
 
 const CopyData = (a) => {
-  navigator.clipboard.writeText(a);
-  alert("Copied the text: " + a);
+  const UserId = document.getElementById("refInput");
+  let data = String(UserId.value).trim(" ");
+  window.navigator.clipboard.writeText(data);
+  alert("Id Copied Successfully");
 };
 
 const Loading = () => {
