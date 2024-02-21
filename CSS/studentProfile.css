@@ -56,20 +56,18 @@ body::before {
   cursor: pointer;
 }
 
-.container1 .register a {
+.container1 > .register {
+  width: 100%;
   background-color: #4caf50;
-  width: 90%;
+  margin-bottom: 10px;
+}
+.container1 .register a {
   color: white;
   padding: 15px;
-  margin-bottom: 10px;
   border: none;
   cursor: pointer;
   display: grid;
   place-items: center;
-}
-
-.register a {
-  color: white;
 }
 
 .container1 input[type="submit"] :hover {
@@ -93,13 +91,9 @@ body::before {
 
   .container1 input[type="submit"] {
     background-color: #4caf50;
-    width: 100%;
+
     border: none;
     cursor: pointer;
-  }
-
-  .register a {
-    width: 90%;
   }
 
   #login-box {
@@ -121,10 +115,6 @@ body::before {
   .container1 input[type="text"],
   .container1 input[type="password"] {
     padding: 8px 10px;
-  }
-
-  .register a {
-    width: 90%;
   }
 
   .container1 input[type="submit"] {
